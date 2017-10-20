@@ -1,0 +1,2173 @@
+{
+  "name": "Test34",
+  "compatibilityLevel": 1400,
+  "model": {
+    "culture": "en-US",
+    "dataSources": [
+      {
+        "type": "structured",
+        "name": "SQL/sqlcldb4",
+        "connectionDetails": {
+          "protocol": "tds",
+          "address": {
+            "server": "sqlcldb4"
+          },
+          "authentication": null,
+          "query": null
+        },
+        "credential": {
+          "AuthenticationKind": "ServiceAccount"
+        }
+      }
+    ],
+    "tables": [
+      {
+        "name": "FactInternetSales",
+        "columns": [
+          {
+            "name": "OrderDateKey",
+            "dataType": "int64",
+            "sourceColumn": "OrderDateKey",
+            "formatString": "0",
+            "displayFolder": "MyFolder",
+            "summarizeBy": "count",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DueDateKey",
+            "dataType": "int64",
+            "sourceColumn": "DueDateKey",
+            "formatString": "0",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ShipDateKey",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "ShipDateKey",
+            "formatString": "0",
+            "summarizeBy": "count",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CustomerKey",
+            "dataType": "int64",
+            "sourceColumn": "CustomerKey",
+            "formatString": "0",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "PromotionKey",
+            "dataType": "int64",
+            "sourceColumn": "PromotionKey",
+            "formatString": "0",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CurrencyKey",
+            "dataType": "int64",
+            "sourceColumn": "CurrencyKey",
+            "formatString": "0",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "SalesTerritoryKey",
+            "dataType": "int64",
+            "sourceColumn": "SalesTerritoryKey",
+            "formatString": "0",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "SalesOrderNumber",
+            "dataType": "string",
+            "sourceColumn": "SalesOrderNumber",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "SalesOrderLineNumber",
+            "dataType": "int64",
+            "sourceColumn": "SalesOrderLineNumber",
+            "formatString": "0",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "RevisionNumber",
+            "dataType": "int64",
+            "sourceColumn": "RevisionNumber",
+            "formatString": "0",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "OrderQuantity",
+            "dataType": "int64",
+            "sourceColumn": "OrderQuantity",
+            "formatString": "0",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "UnitPrice",
+            "dataType": "decimal",
+            "sourceColumn": "UnitPrice",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyGeneral\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Decimal#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ExtendedAmount",
+            "dataType": "decimal",
+            "sourceColumn": "ExtendedAmount",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyGeneral\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Decimal#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "UnitPriceDiscountPct",
+            "dataType": "double",
+            "sourceColumn": "UnitPriceDiscountPct",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"General\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Double#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DiscountAmount",
+            "dataType": "double",
+            "sourceColumn": "DiscountAmount",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"General\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Double#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ProductStandardCost",
+            "dataType": "decimal",
+            "sourceColumn": "ProductStandardCost",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyGeneral\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Decimal#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TotalProductCost",
+            "dataType": "decimal",
+            "sourceColumn": "TotalProductCost",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyGeneral\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Decimal#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "SalesAmount",
+            "dataType": "decimal",
+            "sourceColumn": "SalesAmount",
+            "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyCustom\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Decimal#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TaxAmt",
+            "dataType": "decimal",
+            "sourceColumn": "TaxAmt",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyGeneral\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Decimal#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Freight",
+            "dataType": "decimal",
+            "sourceColumn": "Freight",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyGeneral\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Decimal#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CarrierTrackingNumber",
+            "dataType": "string",
+            "sourceColumn": "CarrierTrackingNumber",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CustomerPONumber",
+            "dataType": "string",
+            "sourceColumn": "CustomerPONumber",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "OrderDate",
+            "dataType": "dateTime",
+            "sourceColumn": "OrderDate",
+            "formatString": "General Date",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"GeneralDateTimeLong\" FormatString=\"G\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DueDate",
+            "dataType": "dateTime",
+            "sourceColumn": "DueDate",
+            "formatString": "General Date",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"GeneralDateTimeLong\" FormatString=\"G\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ShipDate",
+            "dataType": "dateTime",
+            "sourceColumn": "ShipDate",
+            "formatString": "General Date",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"GeneralDateTimeLong\" FormatString=\"G\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactInternetSales-b11aec9b-1c3a-4add-b979-e03d0deb6ac8",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source=FactInternetSales",
+                "in",
+                "    Source"
+              ]
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Count of Sales",
+            "expression": "COUNTROWS(FactInternetSales)",
+            "formatString": "0",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              }
+            ]
+          },
+          {
+            "name": "Salestemp",
+            "expression": [
+              "var vrlastdate12mnth =  CALCULATE(DATEADD(",
+              "\t\t\t  \t\t\t\t\t\t\t\t\t\tLASTNONBLANK(FactInternetSales[DueDate]",
+              "\t\t\t\t\t\t\t\t\t    \t\t\t\t\t\t,SUM(FactInternetSales[SalesAmount]))",
+              "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t,-12",
+              "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t,MONTH)",
+              "\t\t\t\t\t\t\t\t\t, ALL(FactInternetSales))",
+              "\treturn vrlastdate12mnth"
+            ],
+            "formatString": "General Date",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"GeneralDateTimeLong\" FormatString=\"G\" /></DateTimes></Format>"
+              }
+            ]
+          },
+          {
+            "name": "Sales12",
+            "expression": [
+              "var vrlastdate12mnth =  CALCULATE(DATEADD(",
+              "\t\t\t  \t\t\t\t\t\t\t\t\t\tLASTNONBLANK(FactInternetSales[DueDate]",
+              "\t\t\t\t\t\t\t\t\t    \t\t\t\t\t\t,SUM(FactInternetSales[SalesAmount]))",
+              "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t,-12",
+              "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t,MONTH)",
+              "\t\t\t\t\t\t\t\t\t, ALL(FactInternetSales))",
+              "\treturn IF(MAX(DimDate[FullDateAlternateKey]) > vrlastdate12mnth",
+              "\t\t\t\t, SUM(FactInternetSales[SalesAmount]))"
+            ],
+            "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyCustom\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "3e1e90b0-56c6-4d2b-bb1b-8b5049a2bb23"
+          },
+          {
+            "name": "LinkedQueryName",
+            "value": "FactInternetSales"
+          }
+        ]
+      },
+      {
+        "name": "DimSalesTerritory",
+        "isHidden": true,
+        "columns": [
+          {
+            "name": "SalesTerritoryKey",
+            "dataType": "int64",
+            "sourceColumn": "SalesTerritoryKey",
+            "formatString": "0",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "SalesTerritoryAlternateKey",
+            "dataType": "int64",
+            "sourceColumn": "SalesTerritoryAlternateKey",
+            "formatString": "0",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "SalesTerritoryRegion",
+            "dataType": "string",
+            "sourceColumn": "SalesTerritoryRegion",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "SalesTerritoryCountry",
+            "dataType": "string",
+            "sourceColumn": "SalesTerritoryCountry",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "SalesTerritoryGroup",
+            "dataType": "string",
+            "sourceColumn": "SalesTerritoryGroup",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimSalesTerritory-ed448c5b-fb38-4392-a850-8a08155be835",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source=DimSalesTerritory",
+                "in",
+                "    Source"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "f624a8cf-37c3-4b3f-a914-32a0782b7190"
+          },
+          {
+            "name": "LinkedQueryName",
+            "value": "DimSalesTerritory"
+          }
+        ]
+      },
+      {
+        "name": "DimCurrency",
+        "columns": [
+          {
+            "name": "CurrencyKey",
+            "dataType": "int64",
+            "sourceColumn": "CurrencyKey",
+            "formatString": "0",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CurrencyAlternateKey",
+            "dataType": "string",
+            "sourceColumn": "CurrencyAlternateKey",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CurrencyName",
+            "dataType": "string",
+            "sourceColumn": "CurrencyName",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimCurrency-8e6c0e35-6532-4078-9508-ef5038b7e100",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source=DimCurrency",
+                "in",
+                "    Source"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "7896ac86-ac62-4f4f-8a1a-0ae60045821b"
+          },
+          {
+            "name": "LinkedQueryName",
+            "value": "DimCurrency"
+          }
+        ]
+      },
+      {
+        "name": "DimCustomer",
+        "columns": [
+          {
+            "name": "CustomerKey",
+            "dataType": "int64",
+            "sourceColumn": "CustomerKey",
+            "formatString": "0",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "GeographyKey",
+            "dataType": "int64",
+            "sourceColumn": "GeographyKey",
+            "formatString": "0",
+            "summarizeBy": "count",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CustomerAlternateKey",
+            "dataType": "string",
+            "sourceColumn": "CustomerAlternateKey",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Title",
+            "dataType": "string",
+            "sourceColumn": "Title",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "FirstName",
+            "dataType": "string",
+            "sourceColumn": "FirstName",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "MiddleName",
+            "dataType": "string",
+            "sourceColumn": "MiddleName",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "LastName",
+            "dataType": "string",
+            "sourceColumn": "LastName",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "NameStyle",
+            "dataType": "boolean",
+            "sourceColumn": "NameStyle",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Boolean\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Boolean#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "BirthDate",
+            "dataType": "dateTime",
+            "sourceColumn": "BirthDate",
+            "formatString": "dddd\\, mmmm d\\, yyyy",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"LongDate\" FormatString=\"dddd, MMMM d, yyyy\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####Date"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "MaritalStatus",
+            "dataType": "string",
+            "sourceColumn": "MaritalStatus",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Suffix",
+            "dataType": "string",
+            "sourceColumn": "Suffix",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Gender",
+            "dataType": "string",
+            "sourceColumn": "Gender",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "EmailAddress",
+            "dataType": "string",
+            "sourceColumn": "EmailAddress",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "YearlyIncome",
+            "dataType": "decimal",
+            "sourceColumn": "YearlyIncome",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyGeneral\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Decimal#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TotalChildren",
+            "dataType": "int64",
+            "sourceColumn": "TotalChildren",
+            "formatString": "0",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "NumberChildrenAtHome",
+            "dataType": "int64",
+            "sourceColumn": "NumberChildrenAtHome",
+            "formatString": "0",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "EnglishEducation",
+            "dataType": "string",
+            "sourceColumn": "EnglishEducation",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "SpanishEducation",
+            "dataType": "string",
+            "sourceColumn": "SpanishEducation",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "FrenchEducation",
+            "dataType": "string",
+            "sourceColumn": "FrenchEducation",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "EnglishOccupation",
+            "dataType": "string",
+            "sourceColumn": "EnglishOccupation",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "SpanishOccupation",
+            "dataType": "string",
+            "sourceColumn": "SpanishOccupation",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "FrenchOccupation",
+            "dataType": "string",
+            "sourceColumn": "FrenchOccupation",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "HouseOwnerFlag",
+            "dataType": "string",
+            "sourceColumn": "HouseOwnerFlag",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "NumberCarsOwned",
+            "dataType": "int64",
+            "sourceColumn": "NumberCarsOwned",
+            "formatString": "0",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "AddressLine1",
+            "dataType": "string",
+            "sourceColumn": "AddressLine1",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "AddressLine2",
+            "dataType": "string",
+            "sourceColumn": "AddressLine2",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Phone",
+            "dataType": "string",
+            "sourceColumn": "Phone",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DateFirstPurchase",
+            "dataType": "dateTime",
+            "sourceColumn": "DateFirstPurchase",
+            "formatString": "dddd\\, mmmm d\\, yyyy",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"LongDate\" FormatString=\"dddd, MMMM d, yyyy\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####Date"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CommuteDistance",
+            "dataType": "string",
+            "sourceColumn": "CommuteDistance",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimCustomer-cb80f2f5-6651-4629-a7db-a3a3af837930",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source=DimCustomer",
+                "in",
+                "    Source"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "31fcebdf-1116-4cbf-a186-bb1f8b195790"
+          },
+          {
+            "name": "LinkedQueryName",
+            "value": "DimCustomer"
+          }
+        ]
+      },
+      {
+        "name": "DimPromotion",
+        "columns": [
+          {
+            "name": "PromotionKey",
+            "dataType": "int64",
+            "sourceColumn": "PromotionKey",
+            "formatString": "0",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "PromotionAlternateKey",
+            "dataType": "int64",
+            "sourceColumn": "PromotionAlternateKey",
+            "formatString": "0",
+            "summarizeBy": "count",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "EnglishPromotionName",
+            "dataType": "string",
+            "sourceColumn": "EnglishPromotionName",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "SpanishPromotionName",
+            "dataType": "string",
+            "sourceColumn": "SpanishPromotionName",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "FrenchPromotionName",
+            "dataType": "string",
+            "sourceColumn": "FrenchPromotionName",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DiscountPct",
+            "dataType": "double",
+            "sourceColumn": "DiscountPct",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"General\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Double#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "EnglishPromotionType",
+            "dataType": "string",
+            "sourceColumn": "EnglishPromotionType",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "SpanishPromotionType",
+            "dataType": "string",
+            "sourceColumn": "SpanishPromotionType",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "FrenchPromotionType",
+            "dataType": "string",
+            "sourceColumn": "FrenchPromotionType",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "EnglishPromotionCategory",
+            "dataType": "string",
+            "sourceColumn": "EnglishPromotionCategory",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "SpanishPromotionCategory",
+            "dataType": "string",
+            "sourceColumn": "SpanishPromotionCategory",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "FrenchPromotionCategory",
+            "dataType": "string",
+            "sourceColumn": "FrenchPromotionCategory",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "StartDate",
+            "dataType": "dateTime",
+            "sourceColumn": "StartDate",
+            "formatString": "General Date",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"GeneralDateTimeLong\" FormatString=\"G\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "EndDate",
+            "dataType": "dateTime",
+            "sourceColumn": "EndDate",
+            "formatString": "General Date",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"GeneralDateTimeLong\" FormatString=\"G\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "MinQty",
+            "dataType": "int64",
+            "sourceColumn": "MinQty",
+            "formatString": "0",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "MaxQty",
+            "dataType": "int64",
+            "sourceColumn": "MaxQty",
+            "formatString": "0",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimPromotion-e5dd2ac6-c1f7-4ad5-96be-8c9a3a00809a",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source=DimPromotion",
+                "in",
+                "    Source"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "3a984791-adc4-49aa-9502-e9dfc9381be6"
+          },
+          {
+            "name": "LinkedQueryName",
+            "value": "DimPromotion"
+          }
+        ]
+      },
+      {
+        "name": "Maps",
+        "columns": [
+          {
+            "name": "Region",
+            "dataType": "string",
+            "sourceColumn": "Region",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Sales",
+            "dataType": "int64",
+            "sourceColumn": "Sales",
+            "formatString": "0",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Maps-035a4869-f3d4-48e3-9ae1-626c8a817b61",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source=Maps",
+                "in",
+                "    Source"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "8781e539-3924-4028-bfc4-5e81968e1fc0"
+          },
+          {
+            "name": "LinkedQueryName",
+            "value": "Maps"
+          }
+        ]
+      },
+      {
+        "name": "Months",
+        "columns": [
+          {
+            "name": "MonthNR",
+            "dataType": "int64",
+            "sourceColumn": "MonthNR",
+            "formatString": "0",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Months-40b35a81-7e71-48c8-830e-c30769393354",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source=Months",
+                "in",
+                "    Source"
+              ]
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "lastdateprev",
+            "expression": [
+              "var monthnr = IF(HASONEVALUE(Months[MonthNR]), VALUES(Months[MonthNR])-13, 0)",
+              "\t\t\treturn DATEADD(LASTNONBLANK(FactInternetSales[DueDate],SUM(FactInternetSales[SalesAmount])) , monthnr,MONTH)"
+            ],
+            "formatString": "General Date",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"GeneralDateTimeLong\" FormatString=\"G\" /></DateTimes></Format>"
+              }
+            ]
+          },
+          {
+            "name": "Measure",
+            "expression": "CALCULATE(SUM(FactInternetSales[SalesAmount]), DATESBETWEEN(DimDate[FullDateAlternateKey], [lastdateprev],[lastdateprev]))",
+            "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyCustom\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "lastdate",
+            "expression": [
+              "var monthnr = IF(HASONEVALUE(Months[MonthNR]), VALUES(Months[MonthNR])-12, 0)",
+              "\t\t\treturn DATEADD(LASTNONBLANK(FactInternetSales[DueDate],SUM(FactInternetSales[SalesAmount])) , monthnr,MONTH)"
+            ],
+            "formatString": "General Date",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"GeneralDateTimeLong\" FormatString=\"G\" /></DateTimes></Format>"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "e7472b5c-0319-4092-90a1-539e48175c12"
+          },
+          {
+            "name": "LinkedQueryName",
+            "value": "Months"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "1ac871be-59ce-4e56-9941-b35c5c1c88cd",
+        "fromTable": "FactInternetSales",
+        "fromColumn": "SalesTerritoryKey",
+        "toTable": "DimSalesTerritory",
+        "toColumn": "SalesTerritoryKey"
+      },
+      {
+        "name": "81e6acee-c4d1-4107-9d06-6163eb943a89",
+        "fromTable": "FactInternetSales",
+        "fromColumn": "CurrencyKey",
+        "toTable": "DimCurrency",
+        "toColumn": "CurrencyKey"
+      },
+      {
+        "name": "39adf6db-1807-4be4-8949-af7e39a0628f",
+        "fromTable": "FactInternetSales",
+        "fromColumn": "CustomerKey",
+        "toTable": "DimCustomer",
+        "toColumn": "CustomerKey"
+      },
+      {
+        "name": "14d3bcb8-d679-4850-a98a-9fca0817cd02",
+        "fromTable": "FactInternetSales",
+        "fromColumn": "PromotionKey",
+        "toTable": "DimPromotion",
+        "toColumn": "PromotionKey"
+      }
+    ],
+    "expressions": [
+      {
+        "name": "DimDate",
+        "kind": "m",
+        "expression": [
+          "let",
+          "    Source = #\"SQL/sqlcldb4\",",
+          "    AS_AdventureWorksDW2012 = Source{[Name=\"AS_AdventureWorksDW2012\"]}[Data],",
+          "    dbo_DimDate = AS_AdventureWorksDW2012{[Schema=\"dbo\",Item=\"DimDate\"]}[Data],",
+          "    AutoRemovedColumns1 = ",
+          "    let",
+          "        t = Table.FromValue(dbo_DimDate, [DefaultColumnName = \"DimDate\"]),",
+          "        removed = Table.RemoveColumns(t, Table.ColumnsOfType(t, {type table, type record, type list}))",
+          "    in",
+          "        Table.TransformColumnNames(removed, Text.Clean)",
+          "in",
+          "    AutoRemovedColumns1"
+        ]
+      },
+      {
+        "name": "FactInternetSales",
+        "kind": "m",
+        "expression": [
+          "let",
+          "    Source = #\"SQL/sqlcldb4\",",
+          "    AS_AdventureWorksDW2012 = Source{[Name=\"AS_AdventureWorksDW2012\"]}[Data],",
+          "    dbo_FactInternetSales = AS_AdventureWorksDW2012{[Schema=\"dbo\",Item=\"FactInternetSales\"]}[Data],",
+          "    AutoRemovedColumns1 = ",
+          "    let",
+          "        t = Table.FromValue(dbo_FactInternetSales, [DefaultColumnName = \"FactInternetSales\"]),",
+          "        removed = Table.RemoveColumns(t, Table.ColumnsOfType(t, {type table, type record, type list}))",
+          "    in",
+          "        Table.TransformColumnNames(removed, Text.Clean)",
+          "in",
+          "    AutoRemovedColumns1"
+        ]
+      },
+      {
+        "name": "DimSalesTerritory",
+        "kind": "m",
+        "expression": [
+          "let",
+          "    Source = #\"SQL/sqlcldb4\",",
+          "    AS_AdventureWorksDW2012 = Source{[Name=\"AS_AdventureWorksDW2012\"]}[Data],",
+          "    dbo_DimSalesTerritory = AS_AdventureWorksDW2012{[Schema=\"dbo\",Item=\"DimSalesTerritory\"]}[Data],",
+          "    AutoRemovedColumns1 = ",
+          "    let",
+          "        t = Table.FromValue(dbo_DimSalesTerritory, [DefaultColumnName = \"DimSalesTerritory\"]),",
+          "        removed = Table.RemoveColumns(t, Table.ColumnsOfType(t, {type table, type record, type list}))",
+          "    in",
+          "        Table.TransformColumnNames(removed, Text.Clean)",
+          "in",
+          "    AutoRemovedColumns1"
+        ]
+      },
+      {
+        "name": "DimCurrency",
+        "kind": "m",
+        "expression": [
+          "let",
+          "    Source = #\"SQL/sqlcldb4\",",
+          "    AS_AdventureWorksDW2012 = Source{[Name=\"AS_AdventureWorksDW2012\"]}[Data],",
+          "    dbo_DimCurrency = AS_AdventureWorksDW2012{[Schema=\"dbo\",Item=\"DimCurrency\"]}[Data],",
+          "    AutoRemovedColumns1 = ",
+          "    let",
+          "        t = Table.FromValue(dbo_DimCurrency, [DefaultColumnName = \"DimCurrency\"]),",
+          "        removed = Table.RemoveColumns(t, Table.ColumnsOfType(t, {type table, type record, type list}))",
+          "    in",
+          "        Table.TransformColumnNames(removed, Text.Clean)",
+          "in",
+          "    AutoRemovedColumns1"
+        ]
+      },
+      {
+        "name": "DimCustomer",
+        "kind": "m",
+        "expression": [
+          "let",
+          "    Source = #\"SQL/sqlcldb4\",",
+          "    AS_AdventureWorksDW2012 = Source{[Name=\"AS_AdventureWorksDW2012\"]}[Data],",
+          "    dbo_DimCustomer = AS_AdventureWorksDW2012{[Schema=\"dbo\",Item=\"DimCustomer\"]}[Data],",
+          "    AutoRemovedColumns1 = ",
+          "    let",
+          "        t = Table.FromValue(dbo_DimCustomer, [DefaultColumnName = \"DimCustomer\"]),",
+          "        removed = Table.RemoveColumns(t, Table.ColumnsOfType(t, {type table, type record, type list}))",
+          "    in",
+          "        Table.TransformColumnNames(removed, Text.Clean)",
+          "in",
+          "    AutoRemovedColumns1"
+        ]
+      },
+      {
+        "name": "DimPromotion",
+        "kind": "m",
+        "expression": [
+          "let",
+          "    Source = #\"SQL/sqlcldb4\",",
+          "    AS_AdventureWorksDW2012 = Source{[Name=\"AS_AdventureWorksDW2012\"]}[Data],",
+          "    dbo_DimPromotion = AS_AdventureWorksDW2012{[Schema=\"dbo\",Item=\"DimPromotion\"]}[Data],",
+          "    AutoRemovedColumns1 = ",
+          "    let",
+          "        t = Table.FromValue(dbo_DimPromotion, [DefaultColumnName = \"DimPromotion\"]),",
+          "        removed = Table.RemoveColumns(t, Table.ColumnsOfType(t, {type table, type record, type list}))",
+          "    in",
+          "        Table.TransformColumnNames(removed, Text.Clean)",
+          "in",
+          "    AutoRemovedColumns1"
+        ]
+      },
+      {
+        "name": "Maps",
+        "kind": "m",
+        "expression": [
+          "let",
+          "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i45W8svPL0rRTSpKTErMK1HSUTIyMFCK1YGJZ+Tn5CTmpQDFjU0h4u6pOSmpRVBBQ6jiqNRUqIgpsm6EqabYDTUyxTTT3BSLkbEA\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [Region = _t, Sales = _t]),",
+          "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Region\", type text}, {\"Sales\", Int64.Type}}),",
+          "    AutoRemovedColumns1 = ",
+          "    let",
+          "        t = Table.FromValue(#\"Changed Type\", [DefaultColumnName = \"Maps\"]),",
+          "        removed = Table.RemoveColumns(t, Table.ColumnsOfType(t, {type table, type record, type list}))",
+          "    in",
+          "        Table.TransformColumnNames(removed, Text.Clean)",
+          "in",
+          "    AutoRemovedColumns1"
+        ]
+      },
+      {
+        "name": "Months",
+        "kind": "m",
+        "expression": [
+          "let",
+          "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i45WMlSK1YlWMgKTxmDSBEyagkkzMGkOJi3ApCWYNDSAUBDdhkDtsQA=\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [MonthNR = _t]),",
+          "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"MonthNR\", Int64.Type}}),",
+          "    AutoRemovedColumns1 = ",
+          "    let",
+          "        t = Table.FromValue(#\"Changed Type\", [DefaultColumnName = \"Months\"]),",
+          "        removed = Table.RemoveColumns(t, Table.ColumnsOfType(t, {type table, type record, type list}))",
+          "    in",
+          "        Table.TransformColumnNames(removed, Text.Clean)",
+          "in",
+          "    AutoRemovedColumns1"
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ASW-DEFAULT-DIAGRAM",
+        "value": "{\"Version\":1,\"Name\":\"default\",\"Tables\":[{\"TableName\":\"FactInternetSales\",\"X\":887,\"Y\":188,\"Z\":2,\"Width\":225,\"Height\":275},{\"TableName\":\"DimPromotion\",\"X\":653,\"Y\":219,\"Z\":1,\"Width\":225,\"Height\":275}]}"
+      }
+    ]
+  }
+}
