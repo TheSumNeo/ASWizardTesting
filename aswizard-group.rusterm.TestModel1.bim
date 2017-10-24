@@ -1,6 +1,6 @@
 {
   "name": "TestModel1",
-  "description": "Imported database from sql server 'analytics-db-server.database.windows.net' and database 'analytics_db'",
+  "description": "123 Imported database from sql server 'analytics-db-server.database.windows.net' and database 'analytics_db'",
   "compatibilityLevel": 1400,
   "model": {
     "name": "TestModel1",
