@@ -1,5 +1,5 @@
 {
-  "name": "TestModel1",
+  "name": "2222TestModel1",
   "description": "Imported database from sql server 'analytics-db-server.database.windows.net' and database 'analytics_db'",
   "compatibilityLevel": 1400,
   "model": {
