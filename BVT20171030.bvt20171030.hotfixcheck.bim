@@ -4,7 +4,7 @@
   "compatibilityLevel": 1400,
   "model": {
     "name": "hotfixcheck",
-    "description": "111111111111111111111111A Tabular data model at the 1400 compatibility level.",
+    "description": "222222222222222222222222A Tabular data model at the 1400 compatibility level.",
     "defaultMode": "directQuery",
     "culture": "en-US",
     "dataSources": [
